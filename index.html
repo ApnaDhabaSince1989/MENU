@@ -1,51 +1,23 @@
-/*
-Project: Apna Dhaba - Static Website (ready for GitHub Pages)
-Files included below (copy each into the indicated path in your repo):
-
-Folder structure (root of repo):
-
-/ (root)
-  index.html
-  style.css
-  script.js
-  /images/
-    butter-chicken.jpg
-    rara-chicken.jpg
-    rara-mutton.jpg
-    home-made-chicken.jpg
-    fish-pakora.jpg
-    chicken-soup.jpg
-  /signatures/
-    butter-chicken.html
-    rara-chicken.html
-    rara-mutton.html
-    home-made-chicken.html
-    fish-pakora.html
-    chicken-soup.html
-
-Notes:
-- Replace the images in /images/ with the images you uploaded (filenames listed above).
-- All pages are static HTML/CSS/JS. No backend required.
-- Phone call, Zomato and Swiggy links are already wired in the code.
-
---- INDEX.HTML ---
-
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Apna Dhaba — Authentic Punjabi Cuisine</title>
-  <meta name="description" content="Apna Dhaba — Authentic Punjabi food. Signatures: Butter Chicken, Rara Mutton, Rara Chicken, Home Made Chicken, Fish Pakora, Chicken Soup.">
-  <link rel="stylesheet" href="/style.css">
+  <meta name="description" content="Apna Dhaba — Authentic Punjabi food. Signatures: Butter Chicken, Rara Mutton, Rara Chicken, Home Made Chicken, Fish Pakora, Chicken Soup. Call to order or order on Swiggy/Zomato." />
+  <!-- correct relative path -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Header -->
   <header class="site-header" id="siteHeader">
     <div class="container header-inner">
       <div class="brand">
         <h1>Apna Dhaba</h1>
-        <p class="tag">Authentic Punjabi cuisine · Since 1989</p>
+        <p class="tag">Authentic Punjabi Cuisine · Since 1989</p>
       </div>
+
       <nav class="top-actions">
         <a class="btn subtle" href="tel:+919812295535">Call to Order</a>
         <a class="btn" href="https://www.swiggy.com/city/yamuna-nagar/apna-dhaba-and-restaurant-workshop-road-vishnu-nagar-rest421848" target="_blank" rel="noopener">Order on Swiggy</a>
@@ -55,63 +27,72 @@ Notes:
   </header>
 
   <main>
+
+    <!-- Hero -->
     <section class="hero">
-      <div class="hero-inner container">
+      <div class="container hero-inner fade-up">
         <div class="hero-text">
           <h2>Punjabi food the way it’s meant to be</h2>
-          <p class="lead">Authentic taste. Unmatched value. Honest, pocket-friendly pricing without compromise.</p>
-          <div class="hero-cta">
+          <p class="lead">Authentic flavours, uncompromising quality, and honest, pocket-friendly prices.</p>
+
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:10px">
             <a class="btn large" href="tel:+919812295535">Call to Order</a>
             <a class="btn outline" href="#menu">See the Menu</a>
+            <a class="btn" href="#signatures">Our Signatures</a>
           </div>
         </div>
+
         <div class="hero-image" aria-hidden="true">
-          <img src="/images/butter-chicken.jpg" alt="Butter Chicken — Apna Dhaba" />
+          <img src="images/butter-chicken.jpg" alt="Butter Chicken — Apna Dhaba" />
         </div>
       </div>
     </section>
 
+    <!-- Signatures -->
     <section class="signatures container" id="signatures">
       <h3 class="section-title">Our Signatures</h3>
       <p class="section-sub">Dishes that reflect our kitchen at its best — crafted with care, served with pride.</p>
-      <div class="cards">
-        <a class="card" href="/signatures/butter-chicken.html">
-          <img src="/images/butter-chicken.jpg" alt="Butter Chicken">
+
+      <div class="cards fade-up">
+        <a class="card" href="signatures/butter-chicken.html">
+          <img src="images/butter-chicken.jpg" alt="Butter Chicken">
           <div class="card-body"><h4>Butter Chicken</h4></div>
         </a>
 
-        <a class="card" href="/signatures/rara-chicken.html">
-          <img src="/images/rara-chicken.jpg" alt="Rara Chicken">
+        <a class="card" href="signatures/rara-chicken.html">
+          <img src="images/rara-chicken.jpg" alt="Rara Chicken">
           <div class="card-body"><h4>Rara Chicken</h4></div>
         </a>
 
-        <a class="card" href="/signatures/rara-mutton.html">
-          <img src="/images/rara-mutton.jpg" alt="Rara Mutton">
+        <a class="card" href="signatures/rara-mutton.html">
+          <img src="images/rara-mutton.jpg" alt="Rara Mutton">
           <div class="card-body"><h4>Rara Mutton</h4></div>
         </a>
 
-        <a class="card" href="/signatures/home-made-chicken.html">
-          <img src="/images/home-made-chicken.jpg" alt="Home Made Chicken">
+        <a class="card" href="signatures/home-made-chicken.html">
+          <img src="images/home-made-chicken.jpg" alt="Home Made Chicken">
           <div class="card-body"><h4>Home Made Chicken</h4></div>
         </a>
 
-        <a class="card" href="/signatures/fish-pakora.html">
-          <img src="/images/fish-pakora.jpg" alt="Fish Pakora">
+        <a class="card" href="signatures/fish-pakora.html">
+          <img src="images/fish-pakora.jpg" alt="Fish Pakora">
           <div class="card-body"><h4>Fish Pakora</h4></div>
         </a>
 
-        <a class="card" href="/signatures/chicken-soup.html">
-          <img src="/images/chicken-soup.jpg" alt="Chicken Soup">
+        <a class="card" href="signatures/chicken-soup.html">
+          <img src="images/chicken-soup.jpg" alt="Chicken Soup">
           <div class="card-body"><h4>Chicken Soup</h4></div>
         </a>
       </div>
     </section>
 
+    <!-- Menu (full) -->
     <section class="menu container" id="menu">
       <h3 class="section-title">Menu</h3>
-      <p class="section-sub">Our full menu. Clear, honest, and easy to scan.</p>
+      <p class="section-sub">Our full menu — clear, honest, and easy to scan.</p>
 
-      <div class="menu-columns">
+      <div class="menu-columns fade-up">
+
         <div class="menu-col">
           <h4>Snacks (Veg)</h4>
           <ul class="menu-list">
@@ -153,6 +134,7 @@ Notes:
             <li><span>Chilli Paneer</span><span class="price">₹250</span></li>
             <li><span>Mutter Paneer</span><span class="price">₹280</span></li>
             <li><span>Paneer Butter Masala</span><span class="price">₹280</span></li>
+            <li><span>Paneer Do Pyaza</span><span class="price">₹280</span></li>
             <li><span>Rarra Paneer</span><span class="price">₹350</span></li>
             <li><span>Dal Makhni</span><span class="price">₹180</span></li>
             <li><span>Boondi Raita</span><span class="price">₹120</span></li>
@@ -202,270 +184,45 @@ Notes:
             <li><span>Prawns Tikka</span><span class="price">₹750</span></li>
           </ul>
         </div>
-      </div>
 
+      </div>
     </section>
 
-    <section class="info container">
+    <!-- Info / Contact -->
+    <section class="info container fade-up">
       <div class="info-grid">
         <div>
           <h4>Visit Us</h4>
           <p>Yamuna Nagar, Haryana<br>Dine-in · Takeaway · Delivery</p>
         </div>
+
         <div>
           <h4>Hours</h4>
           <p>11:30 AM – 11:00 PM (Daily)</p>
         </div>
+
         <div>
           <h4>Orders</h4>
-          <p><a href="tel:+919812295535">+91 98122 95535</a><br>
-          <a href="https://www.swiggy.com/city/yamuna-nagar/apna-dhaba-and-restaurant-workshop-road-vishnu-nagar-rest421848" target="_blank" rel="noopener">Order on Swiggy</a><br>
-          <a href="https://www.zomato.com/yamuna-nagar/apna-dhaba-restaurant-yamuna-nagar-locality/order" target="_blank" rel="noopener">Order on Zomato</a>
+          <p>
+            <a href="tel:+919812295535">+91 98122 95535</a><br>
+            <a href="https://www.swiggy.com/city/yamuna-nagar/apna-dhaba-and-restaurant-workshop-road-vishnu-nagar-rest421848" target="_blank" rel="noopener">Order on Swiggy</a><br>
+            <a href="https://www.zomato.com/yamuna-nagar/apna-dhaba-restaurant-yamuna-nagar-locality/order" target="_blank" rel="noopener">Order on Zomato</a>
           </p>
         </div>
       </div>
     </section>
+
   </main>
 
-  <footer class="site-footer">
+  <!-- Footer -->
+  <footer class="site-footer fade-up">
     <div class="container footer-inner">
       <p>© Apna Dhaba · Authentic Punjabi Cuisine · Since 1989</p>
       <p class="muted">Prepared with premium ingredients. Honest, pocket-friendly prices.</p>
     </div>
   </footer>
 
-  <script src="/script.js"></script>
+  <!-- correct relative path to script -->
+  <script src="script.js"></script>
 </body>
 </html>
-
---- STYLE.CSS ---
-
-/* style.css - simple, modern, premium palette */
-:root{
-  --bg:#0f0f10; /* deep charcoal */
-  --card:#0f1112;
-  --muted:#cfc7b9; /* warm sand */
-  --accent:#b8873a; /* muted gold */
-  --accent-2:#c55a3d; /* terracotta hint */
-  --white:#faf8f5;
-}
-*{box-sizing:border-box}
-body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:linear-gradient(180deg,var(--bg) 0%, #0b0b0b 100%);color:var(--white);-webkit-font-smoothing:antialiased}
-.container{width:min(1100px,94%);margin:0 auto}
-.site-header{position:fixed;left:0;right:0;top:0;background:rgba(15,15,16,0.6);backdrop-filter:blur(6px);border-bottom:1px solid rgba(255,255,255,0.03);z-index:40}
-.header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
-.brand h1{margin:0;font-family: 'Playfair Display', serif;font-weight:600;letter-spacing:0.6px}
-.brand .tag{margin:0;font-size:13px;color:var(--muted)}
-.top-actions{display:flex;gap:10px}
-.btn{background:var(--accent);color:#111;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600}
-.btn.subtle{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--white)}
-.btn.outline{background:transparent;border:1px solid rgba(255,255,255,0.08);color:var(--white)}
-.btn.large{padding:12px 18px;font-size:16px}
-.hero{padding:110px 0 60px}
-.hero-inner{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center}
-.hero h2{font-size:34px;margin:0 0 8px;color:var(--white);font-family:'Playfair Display', serif}
-.lead{color:var(--muted);margin:0 0 18px}
-.hero-image img{width:100%;height:100%;object-fit:cover;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,0.6)}
-.section-title{font-family:'Playfair Display', serif;font-size:22px;margin:8px 0}
-.section-sub{color:var(--muted);margin:0 0 16px}
-.signatures .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px}
-.card{display:block;overflow:hidden;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));text-decoration:none;color:var(--white);transition:transform .28s ease,box-shadow .28s ease}
-.card img{width:100%;height:140px;object-fit:cover;display:block}
-.card-body{padding:10px}
-.card:hover{transform:translateY(-6px);box-shadow:0 15px 30px rgba(0,0,0,0.6)}
-.menu{padding:30px 0}
-.menu-columns{display:flex;gap:18px}
-.menu-col{flex:1}
-.menu-list{list-style:none;padding:0;margin:0}
-.menu-list li{display:flex;justify-content:space-between;padding:8px 6px;border-bottom:1px dashed rgba(255,255,255,0.03)}
-.price{color:var(--muted);min-width:70px;text-align:right}
-.info{padding:30px 0}
-.info-grid{display:flex;gap:24px;justify-content:space-between}
-.site-footer{padding:26px 0;border-top:1px solid rgba(255,255,255,0.03);background:linear-gradient(180deg, transparent, rgba(0,0,0,0.4));}
-.footer-inner{display:flex;justify-content:space-between;align-items:center}
-.muted{color:var(--muted);font-size:13px}
-
-/* Responsive */
-@media (max-width:900px){
-  .hero-inner{grid-template-columns:1fr;}
-  .hero-image{order: -1}
-  .menu-columns{flex-direction:column}
-  .info-grid{flex-direction:column}
-}
-
-/* subtle enter animations */
-.fade-up{opacity:0;transform:translateY(12px);transition:opacity .6s ease, transform .6s ease}
-.fade-up.show{opacity:1;transform:none}
-
-/* small helper */
-a{color:inherit}
-
---- SCRIPT.JS ---
-
-// script.js - small helpers: header shrink + intersection fade-in
-(function(){
-  // header shrink
-  var header = document.getElementById('siteHeader');
-  var lastScroll = 0;
-  window.addEventListener('scroll', function(){
-    var y = window.scrollY || window.pageYOffset;
-    if(y>60) header.classList.add('scrolled'); else header.classList.remove('scrolled');
-    lastScroll = y;
-  });
-
-  // simple fade-up on scroll
-  var io = new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if(e.isIntersecting) e.target.classList.add('show');
-    });
-  },{threshold:0.12});
-
-  document.querySelectorAll('.fade-up').forEach(function(el){ io.observe(el); });
-})();
-
-/* small CSS tweak for header scrolled state (inline here because it's tiny) */
-
-/* Add this at runtime */
-(function(){
-  var style=document.createElement('style');
-  style.innerHTML = '\n.site-header.scrolled{padding:6px 0;background:rgba(15,15,16,0.85);box-shadow:0 6px 20px rgba(0,0,0,0.6)}\n';
-  document.head.appendChild(style);
-})();
-
---- signatures/butter-chicken.html ---
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Butter Chicken — Apna Dhaba</title>
-  <link rel="stylesheet" href="/style.css">
-</head>
-<body>
-  <header class="site-header"><div class="container header-inner"><div class="brand"><h1>Apna Dhaba</h1></div><nav class="top-actions"><a class="btn subtle" href="tel:+919812295535">Call to Order</a><a class="btn" href="https://www.swiggy.com/city/yamuna-nagar/apna-dhaba-and-restaurant-workshop-road-vishnu-nagar-rest421848" target="_blank">Order on Swiggy</a><a class="btn" href="https://www.zomato.com/yamuna-nagar/apna-dhaba-restaurant-yamuna-nagar-locality/order" target="_blank">Order on Zomato</a></nav></div></header>
-
-  <main class="container" style="padding:110px 0 60px">
-    <article class="dish-hero">
-      <img src="/images/butter-chicken.jpg" alt="Butter Chicken" style="width:100%;border-radius:12px;object-fit:cover;max-height:420px;">
-      <h2 style="margin-top:16px;font-family:'Playfair Display', serif;">Butter Chicken</h2>
-      <p style="color:var(--muted);max-width:760px;">Slow-cooked, rich, and deeply comforting. Prepared with premium ingredients and balanced spices, this butter chicken delivers smooth, indulgent gravy and generous portions.</p>
-      <div style="margin-top:14px;display:flex;gap:10px">
-        <a class="btn" href="tel:+919812295535">Call to Order</a>
-        <a class="btn" href="https://www.swiggy.com/city/yamuna-nagar/apna-dhaba-and-restaurant-workshop-road-vishnu-nagar-rest421848" target="_blank">Order on Swiggy</a>
-        <a class="btn" href="https://www.zomato.com/yamuna-nagar/apna-dhaba-restaurant-yamuna-nagar-locality/order" target="_blank">Order on Zomato</a>
-      </div>
-    </article>
-
-    <p style="margin-top:30px"><a href="/">← Back to menu</a></p>
-  </main>
-
-</body>
-</html>
-
---- signatures/rara-chicken.html ---
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Rara Chicken — Apna Dhaba</title>
-  <link rel="stylesheet" href="/style.css">
-</head>
-<body>
-<header class="site-header"><div class="container header-inner"><div class="brand"><h1>Apna Dhaba</h1></div><nav class="top-actions"><a class="btn subtle" href="tel:+919812295535">Call to Order</a><a class="btn" href="https://www.swiggy.com/city/yamuna-nagar/apna-dhaba-and-restaurant-workshop-road-vishnu-nagar-rest421848" target="_blank">Order on Swiggy</a><a class="btn" href="https://www.zomato.com/yamuna-nagar/apna-dhaba-restaurant-yamuna-nagar-locality/order" target="_blank">Order on Zomato</a></nav></div></header>
-<main class="container" style="padding:110px 0 60px">
-  <img src="/images/rara-chicken.jpg" alt="Rara Chicken" style="width:100%;border-radius:12px;object-fit:cover;max-height:420px;">
-  <h2 style="margin-top:16px;font-family:'Playfair Display', serif;">Rara Chicken</h2>
-  <p style="color:var(--muted);max-width:760px;">Robust, textured, and full of character. Prepared with finely spiced minced masala and slow-cooked chicken that builds flavour with every bite.</p>
-  <div style="margin-top:14px;display:flex;gap:10px"><a class="btn" href="tel:+919812295535">Call to Order</a><a class="btn" href="https://www.swiggy.com/city/yamuna-nagar/apna-dhaba-and-restaurant-workshop-road-vishnu-nagar-rest421848" target="_blank">Order on Swiggy</a><a class="btn" href="https://www.zomato.com/yamuna-nagar/apna-dhaba-restaurant-yamuna-nagar-locality/order" target="_blank">Order on Zomato</a></div>
-  <p style="margin-top:30px"><a href="/">← Back to menu</a></p>
-</main>
-</body>
-</html>
-
---- signatures/rara-mutton.html ---
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Rara Mutton — Apna Dhaba</title>
-  <link rel="stylesheet" href="/style.css">
-</head>
-<body>
-<header class="site-header"><div class="container header-inner"><div class="brand"><h1>Apna Dhaba</h1></div><nav class="top-actions"><a class="btn subtle" href="tel:+919812295535">Call to Order</a><a class="btn" href="https://www.swiggy.com/city/yamuna-nagar/apna-dhaba-and-restaurant-workshop-road-vishnu-nagar-rest421848" target="_blank">Order on Swiggy</a><a class="btn" href="https://www.zomato.com/yamuna-nagar/apna-dhaba-restaurant-yamuna-nagar-locality/order" target="_blank">Order on Zomato</a></nav></div></header>
-<main class="container" style="padding:110px 0 60px">
-  <img src="/images/rara-mutton.jpg" alt="Rara Mutton" style="width:100%;border-radius:12px;object-fit:cover;max-height:420px;">
-  <h2 style="margin-top:16px;font-family:'Playfair Display', serif;">Rara Mutton</h2>
-  <p style="color:var(--muted);max-width:760px;">Slow-cooked, deeply spiced, and full-bodied. Prepared with tender mutton and rich masala — patience and experience in every spoonful.</p>
-  <div style="margin-top:14px;display:flex;gap:10px"><a class="btn" href="tel:+919812295535">Call to Order</a><a class="btn" href="https://www.swiggy.com/city/yamuna-nagar/apna-dhaba-and-restaurant-workshop-road-vishnu-nagar-rest421848" target="_blank">Order on Swiggy</a><a class="btn" href="https://www.zomato.com/yamuna-nagar/apna-dhaba-restaurant-yamuna-nagar-locality/order" target="_blank">Order on Zomato</a></div>
-  <p style="margin-top:30px"><a href="/">← Back to menu</a></p>
-</main>
-</body>
-</html>
-
---- signatures/home-made-chicken.html ---
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Home Made Chicken — Apna Dhaba</title>
-  <link rel="stylesheet" href="/style.css">
-</head>
-<body>
-<header class="site-header"><div class="container header-inner"><div class="brand"><h1>Apna Dhaba</h1></div><nav class="top-actions"><a class="btn subtle" href="tel:+919812295535">Call to Order</a><a class="btn" href="https://www.swiggy.com/city/yamuna-nagar/apna-dhaba-and-restaurant-workshop-road-vishnu-nagar-rest421848" target="_blank">Order on Swiggy</a><a class="btn" href="https://www.zomato.com/yamuna-nagar/apna-dhaba-restaurant-yamuna-nagar-locality/order" target="_blank">Order on Zomato</a></nav></div></header>
-<main class="container" style="padding:110px 0 60px">
-  <img src="/images/home-made-chicken.jpg" alt="Home Made Chicken" style="width:100%;border-radius:12px;object-fit:cover;max-height:420px;">
-  <h2 style="margin-top:16px;font-family:'Playfair Display', serif;">Home Made Chicken</h2>
-  <p style="color:var(--muted);max-width:760px;">Comforting, balanced, and deeply familiar. Prepared with simple ingredients and patient cooking — food that tastes like home.</p>
-  <div style="margin-top:14px;display:flex;gap:10px"><a class="btn" href="tel:+919812295535">Call to Order</a><a class="btn" href="https://www.swiggy.com/city/yamuna-nagar/apna-dhaba-and-restaurant-workshop-road-vishnu-nagar-rest421848" target="_blank">Order on Swiggy</a><a class="btn" href="https://www.zomato.com/yamuna-nagar/apna-dhaba-restaurant-yamuna-nagar-locality/order" target="_blank">Order on Zomato</a></div>
-  <p style="margin-top:30px"><a href="/">← Back to menu</a></p>
-</main>
-</body>
-</html>
-
---- signatures/fish-pakora.html ---
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Fish Pakora — Apna Dhaba</title>
-  <link rel="stylesheet" href="/style.css">
-</head>
-<body>
-<header class="site-header"><div class="container header-inner"><div class="brand"><h1>Apna Dhaba</h1></div><nav class="top-actions"><a class="btn subtle" href="tel:+919812295535">Call to Order</a><a class="btn" href="https://www.swiggy.com/city/yamuna-nagar/apna-dhaba-and-restaurant-workshop-road-vishnu-nagar-rest421848" target="_blank">Order on Swiggy</a><a class="btn" href="https://www.zomato.com/yamuna-nagar/apna-dhaba-restaurant-yamuna-nagar-locality/order" target="_blank">Order on Zomato</a></nav></div></header>
-<main class="container" style="padding:110px 0 60px">
-  <img src="/images/fish-pakora.jpg" alt="Fish Pakora" style="width:100%;border-radius:12px;object-fit:cover;max-height:420px;">
-  <h2 style="margin-top:16px;font-family:'Playfair Display', serif;">Fish Pakora</h2>
-  <p style="color:var(--muted);max-width:760px;">Crisp on the outside, tender within. Prepared with fresh fish and a batter that stays light and flavourful.</p>
-  <div style="margin-top:14px;display:flex;gap:10px"><a class="btn" href="tel:+919812295535">Call to Order</a><a class="btn" href="https://www.swiggy.com/city/yamuna-nagar/apna-dhaba-and-restaurant-workshop-road-vishnu-nagar-rest421848" target="_blank">Order on Swiggy</a><a class="btn" href="https://www.zomato.com/yamuna-nagar/apna-dhaba-restaurant-yamuna-nagar-locality/order" target="_blank">Order on Zomato</a></div>
-  <p style="margin-top:30px"><a href="/">← Back to menu</a></p>
-</main>
-</body>
-</html>
-
---- signatures/chicken-soup.html ---
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Chicken Soup — Apna Dhaba</title>
-  <link rel="stylesheet" href="/style.css">
-</head>
-<body>
-<header class="site-header"><div class="container header-inner"><div class="brand"><h1>Apna Dhaba</h1></div><nav class="top-actions"><a class="btn subtle" href="tel:+919812295535">Call to Order</a><a class="btn" href="https://www.swiggy.com/city/yamuna-nagar/apna-dhaba-and-restaurant-workshop-road-vishnu-nagar-rest421848" target="_blank">Order on Swiggy</a><a class="btn" href="https://www.zomato.com/yamuna-nagar/apna-dhaba-restaurant-yamuna-nagar-locality/order" target="_blank">Order on Zomato</a></nav></div></header>
-<main class="container" style="padding:110px 0 60px">
-  <img src="/images/chicken-soup.jpg" alt="Chicken Soup" style="width:100%;border-radius:12px;object-fit:cover;max-height:420px;">
-  <h2 style="margin-top:16px;font-family:'Playfair Display', serif;">Chicken Soup</h2>
-  <p style="color:var(--muted);max-width:760px;">Light, nourishing, and quietly satisfying — a simple preparation done with attention to balance and freshness.</p>
-  <div style="margin-top:14px;display:flex;gap:10px"><a class="btn" href="tel:+919812295535">Call to Order</a><a class="btn" href="https://www.swiggy.com/city/yamuna-nagar/apna-dhaba-and-restaurant-workshop-road-vishnu-nagar-rest421848" target="_blank">Order on Swiggy</a><a class="btn" href="https://www.zomato.com/yamuna-nagar/apna-dhaba-restaurant-yamuna-nagar-locality/order" target="_blank">Order on Zomato</a></div>
-  <p style="margin-top:30px"><a href="/">← Back to menu</a></p>
-</main>
-</body>
-</html>
-
-END OF FILES
-*/
