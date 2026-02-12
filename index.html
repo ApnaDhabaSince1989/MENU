@@ -2,229 +2,214 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Apna Dhaba — Authentic Punjabi Cuisine</title>
-  <meta name="description" content="Apna Dhaba — Authentic Punjabi food in Yamuna Nagar. Signatures: Butter Chicken, Rara Mutton, Rara Chicken, Home Made Chicken, Fish Pakora, Chicken Soup. Call to Order or order on Swiggy and Zomato." />
-  <!-- Local CSS (relative path) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Apna Dhaba | Authentic Punjabi Cuisine Since 1989</title>
+  <meta name="description" content="Apna Dhaba — Authentic Punjabi cuisine since 1989. Premium ingredients, honest pricing, legendary flavours. Order via phone, Swiggy or Zomato." />
+
+  <!-- Main stylesheet -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Font polish (safe, subtle upgrade) -->
+  <style>
+    body {
+      letter-spacing: 0.2px;
+    }
+    h1, h2, h3, h4 {
+      letter-spacing: 0.6px;
+    }
+    .brand h1 {
+      font-size: 26px;
+      font-weight: 700;
+    }
+    .hero h2 {
+      font-size: 38px;
+      line-height: 1.2;
+    }
+    .section-title {
+      font-size: 26px;
+      margin-top: 60px;
+    }
+    .menu h4 {
+      margin-top: 28px;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+    .menu-list li {
+      padding: 10px 4px;
+    }
+  </style>
 </head>
+
 <body>
 
   <!-- HEADER -->
-  <header class="site-header" id="siteHeader" role="banner">
+  <header class="site-header">
     <div class="container header-inner">
-      <div class="brand" style="line-height:1">
-        <h1 style="margin:0">Apna Dhaba</h1>
-        <div class="tag" style="font-size:12px;color:var(--muted)">Authentic Punjabi Cuisine · Since 1989</div>
+      <div class="brand">
+        <h1>Apna Dhaba</h1>
+        <p class="tag">Authentic Punjabi Cuisine · Since 1989</p>
       </div>
 
-      <nav class="top-actions" aria-label="Top actions" style="display:flex;gap:10px;align-items:center">
-        <a class="btn subtle" href="tel:+919812295535">Call to Order</a>
-        <a class="btn" href="https://www.swiggy.com/city/yamuna-nagar/apna-dhaba-and-restaurant-workshop-road-vishnu-nagar-rest421848" target="_blank" rel="noopener">Order on Swiggy</a>
-        <a class="btn" href="https://www.zomato.com/yamuna-nagar/apna-dhaba-restaurant-yamuna-nagar-locality/order" target="_blank" rel="noopener">Order on Zomato</a>
-      </nav>
+      <div class="top-actions">
+        <a class="btn subtle" href="tel:+919812295535">Call</a>
+        <a class="btn" href="https://www.swiggy.com/city/yamuna-nagar/apna-dhaba-and-restaurant-workshop-road-vishnu-nagar-rest421848" target="_blank">Swiggy</a>
+        <a class="btn" href="https://www.zomato.com/yamuna-nagar/apna-dhaba-restaurant-yamuna-nagar-locality/order" target="_blank">Zomato</a>
+      </div>
     </div>
   </header>
 
-  <main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner fade-up">
+      <div>
+        <h2>Punjabi food, done right.</h2>
+        <p class="lead">
+          Authentic taste, uncompromising quality, and pocket-friendly pricing.
+          Premium ingredients, traditional recipes, and flavours you won’t find anywhere else.
+        </p>
 
-    <!-- HERO -->
-    <section class="hero" aria-label="Hero">
-      <div class="container hero-inner fade-up">
-        <div class="hero-text">
-          <h2>Punjabi food the way it’s meant to be</h2>
-          <p class="lead">Authentic flavours, uncompromising quality, and honest, pocket-friendly prices. We use premium ingredients and traditional technique — no shortcuts.</p>
-
-          <div style="margin-top:16px;display:flex;gap:12px;flex-wrap:wrap">
-            <a class="btn large" href="tel:+919812295535">Call to Order</a>
-            <a class="btn outline" href="#menu">See the Menu</a>
-            <a class="btn" href="#signatures">Our Signatures</a>
-          </div>
-        </div>
-
-        <div class="hero-image" aria-hidden="true">
-          <!-- using your actual uploaded filename -->
-          <img src="images/butterchicken2.jpg" alt="Butter Chicken — Apna Dhaba" />
+        <div style="margin-top:20px; display:flex; gap:14px; flex-wrap:wrap;">
+          <a class="btn" href="tel:+919812295535">Call to Order</a>
+          <a class="btn outline" href="#menu">View Menu</a>
         </div>
       </div>
-    </section>
 
-    <!-- SIGNATURES -->
-    <section class="signatures container" id="signatures" aria-labelledby="signature-heading">
-      <h3 id="signature-heading" class="section-title">Our Signatures</h3>
-      <p class="section-sub">Dishes that reflect our kitchen at its best — crafted with care, served with pride.</p>
-
-      <div class="cards fade-up" role="list">
-        <!-- NOTE: these links expect signatures/*.html to exist later -->
-        <a class="card" href="signatures/butter-chicken.html" role="listitem">
-          <img src="images/butterchicken2.jpg" alt="Butter Chicken">
-          <div class="card-body"><h4>Butter Chicken</h4></div>
-        </a>
-
-        <a class="card" href="signatures/rara-chicken.html" role="listitem">
-          <img src="images/rarachicken.jpg" alt="Rara Chicken">
-          <div class="card-body"><h4>Rara Chicken</h4></div>
-        </a>
-
-        <a class="card" href="signatures/rara-mutton.html" role="listitem">
-          <img src="images/raramutton.jpg" alt="Rara Mutton">
-          <div class="card-body"><h4>Rara Mutton</h4></div>
-        </a>
-
-        <a class="card" href="signatures/home-made-chicken.html" role="listitem">
-          <img src="images/hmadechicken.jpg" alt="Home Made Chicken">
-          <div class="card-body"><h4>Home Made Chicken</h4></div>
-        </a>
-
-        <a class="card" href="signatures/fish-pakora.html" role="listitem">
-          <img src="images/fishpkoraa.jpg" alt="Fish Pakora">
-          <div class="card-body"><h4>Fish Pakora</h4></div>
-        </a>
-
-        <a class="card" href="signatures/chicken-soup.html" role="listitem">
-          <img src="images/chickensoup.jpg" alt="Chicken Soup">
-          <div class="card-body"><h4>Chicken Soup</h4></div>
-        </a>
+      <div class="hero-image">
+        <img src="images/butterchicken2.jpg" alt="Butter Chicken" />
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- FULL MENU -->
-    <section class="menu container" id="menu" aria-labelledby="menu-heading">
-      <h3 id="menu-heading" class="section-title">Menu</h3>
-      <p class="section-sub">Our full menu — clear, honest, and easy to scan.</p>
+  <!-- SIGNATURE HIGHLIGHTS (NO SEPARATE PAGES) -->
+  <section class="container">
+    <h3 class="section-title">House Specialties</h3>
+    <p class="section-sub">
+      These dishes quietly represent our kitchen at its finest.
+      Every item on our menu is crafted with the same care.
+    </p>
 
-      <div class="menu-columns fade-up" style="display:flex;gap:20px;flex-wrap:wrap">
-
-        <div class="menu-col" style="flex:1;min-width:260px">
-          <h4>Snacks (Veg)</h4>
-          <ul class="menu-list">
-            <li><span>Peanut Masala</span><span class="price">₹100</span></li>
-            <li><span>Cheese Finger</span><span class="price">₹280</span></li>
-            <li><span>Paneer Tikka</span><span class="price">₹250</span></li>
-            <li><span>Malai Paneer Tikka</span><span class="price">₹270</span></li>
-            <li><span>Kasundi Paneer Tikka</span><span class="price">₹280</span></li>
-            <li><span>Hariyali Paneer Tikka</span><span class="price">₹280</span></li>
-          </ul>
-
-          <h4>Chaap</h4>
-          <ul class="menu-list">
-            <li><span>Butter Chaap Gravy</span><span class="price">₹280</span></li>
-            <li><span>Kadhai Chaap Gravy</span><span class="price">₹280</span></li>
-            <li><span>Lemon Chaap Gravy</span><span class="price">₹300</span></li>
-            <li><span>Rarra Chaap Gravy</span><span class="price">₹300</span></li>
-            <li><span>Tandoori Chaap</span><span class="price">₹200</span></li>
-            <li><span>Malai Chaap</span><span class="price">₹220</span></li>
-          </ul>
-
-          <h4>Mushrooms</h4>
-          <ul class="menu-list">
-            <li><span>Mushroom Chilli</span><span class="price">₹280</span></li>
-            <li><span>Mushroom Duplex</span><span class="price">₹280</span></li>
-            <li><span>Mushroom Tikka</span><span class="price">₹250</span></li>
-            <li><span>Malai Mushroom Tikka</span><span class="price">₹280</span></li>
-            <li><span>Lemon Mushroom</span><span class="price">₹300</span></li>
-          </ul>
-        </div>
-
-        <div class="menu-col" style="flex:1;min-width:260px">
-          <h4>Main Course (Veg)</h4>
-          <ul class="menu-list">
-            <li><span>Paneer Bhurji</span><span class="price">₹250</span></li>
-            <li><span>Palak Paneer</span><span class="price">₹280</span></li>
-            <li><span>Kadhai Paneer</span><span class="price">₹250</span></li>
-            <li><span>Shahi Paneer</span><span class="price">₹250</span></li>
-            <li><span>Chilli Paneer</span><span class="price">₹250</span></li>
-            <li><span>Mutter Paneer</span><span class="price">₹280</span></li>
-            <li><span>Paneer Butter Masala</span><span class="price">₹280</span></li>
-            <li><span>Paneer Do Pyaza</span><span class="price">₹280</span></li>
-            <li><span>Rarra Paneer</span><span class="price">₹350</span></li>
-            <li><span>Dal Makhni</span><span class="price">₹180</span></li>
-            <li><span>Boondi Raita</span><span class="price">₹120</span></li>
-          </ul>
-
-          <h4>Rice & Breads</h4>
-          <ul class="menu-list">
-            <li><span>Jeera Rice</span><span class="price">₹80</span></li>
-            <li><span>Rice with Gravy</span><span class="price">₹200</span></li>
-            <li><span>Masala Rice</span><span class="price">₹150</span></li>
-            <li><span>Butter Naan</span><span class="price">₹35</span></li>
-            <li><span>Garlic Naan</span><span class="price">₹60</span></li>
-            <li><span>Lachha Parantha</span><span class="price">₹50</span></li>
-            <li><span>Paneer Parantha</span><span class="price">₹90</span></li>
-          </ul>
-        </div>
-
-        <div class="menu-col" style="flex:1;min-width:260px">
-          <h4>Non-Veg Starters</h4>
-          <ul class="menu-list">
-            <li><span>Chicken Soup</span><span class="price">₹60</span></li>
-            <li><span>Special Chicken Soup</span><span class="price">₹80</span></li>
-            <li><span>Chicken Finger (10 pcs)</span><span class="price">₹300</span></li>
-            <li><span>Chicken Nuggets (10 pcs)</span><span class="price">₹300</span></li>
-            <li><span>Tandoori Chicken</span><span class="price">₹380</span></li>
-            <li><span>Afghani Chicken</span><span class="price">₹500</span></li>
-          </ul>
-
-          <h4>Non-Veg Main</h4>
-          <ul class="menu-list">
-            <li><span>Egg Curry</span><span class="price">₹220</span></li>
-            <li><span>Butter Chicken</span><span class="price">₹550</span></li>
-            <li><span>Kadhai Chicken</span><span class="price">₹550</span></li>
-            <li><span>Lemon Chicken</span><span class="price">₹600</span></li>
-            <li><span>Rara Chicken</span><span class="price">₹600</span></li>
-            <li><span>Rara Mutton</span><span class="price">₹600</span></li>
-            <li><span>Home Made Chicken</span><span class="price">₹550</span></li>
-            <li><span>Chilli Chicken</span><span class="price">₹550</span></li>
-            <li><span>Honey Butter Chicken</span><span class="price">₹650</span></li>
-          </ul>
-
-          <h4>Fish & Prawns</h4>
-          <ul class="menu-list">
-            <li><span>Fish Finger</span><span class="price">₹450</span></li>
-            <li><span>Fish Pakoda</span><span class="price">₹300</span></li>
-            <li><span>Ginger Garlic Fish</span><span class="price">₹550</span></li>
-            <li><span>Prawns Tikka</span><span class="price">₹750</span></li>
-          </ul>
-        </div>
-
+    <div class="cards fade-up">
+      <div class="card">
+        <img src="images/butterchicken2.jpg" alt="Butter Chicken">
+        <div class="card-body">Butter Chicken</div>
       </div>
-    </section>
 
-    <!-- INFO AND CONTACT -->
-    <section class="info container fade-up" aria-label="Contact and info">
-      <div class="info-grid" style="display:flex;gap:24px;justify-content:space-between;flex-wrap:wrap">
-        <div style="flex:1;min-width:200px">
-          <h4>Visit Us</h4>
-          <p>Yamuna Nagar, Haryana<br>Dine-in · Takeaway · Delivery</p>
-        </div>
-
-        <div style="flex:1;min-width:200px">
-          <h4>Hours</h4>
-          <p>11:30 AM – 11:00 PM (Daily)</p>
-        </div>
-
-        <div style="flex:1;min-width:200px">
-          <h4>Orders</h4>
-          <p>
-            <a href="tel:+919812295535">+91 98122 95535</a><br />
-            <a href="https://www.swiggy.com/city/yamuna-nagar/apna-dhaba-and-restaurant-workshop-road-vishnu-nagar-rest421848" target="_blank" rel="noopener">Order on Swiggy</a><br />
-            <a href="https://www.zomato.com/yamuna-nagar/apna-dhaba-restaurant-yamuna-nagar-locality/order" target="_blank" rel="noopener">Order on Zomato</a>
-          </p>
-        </div>
+      <div class="card">
+        <img src="images/rarachicken.jpg" alt="Rara Chicken">
+        <div class="card-body">Rara Chicken</div>
       </div>
-    </section>
 
-  </main>
+      <div class="card">
+        <img src="images/raramutton.jpg" alt="Rara Mutton">
+        <div class="card-body">Rara Mutton</div>
+      </div>
+
+      <div class="card">
+        <img src="images/hmadechicken.jpg" alt="Home Made Chicken">
+        <div class="card-body">Home Made Chicken</div>
+      </div>
+
+      <div class="card">
+        <img src="images/fishpkoraa.jpg" alt="Fish Pakora">
+        <div class="card-body">Fish Pakora</div>
+      </div>
+
+      <div class="card">
+        <img src="images/chickensoup.jpg" alt="Chicken Soup">
+        <div class="card-body">Chicken Soup</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu container" id="menu">
+    <h3 class="section-title">Menu</h3>
+    <p class="section-sub">
+      Clear pricing. Honest portions. Prepared in Amul Butter & Desi Ghee.
+    </p>
+
+    <div class="menu-columns fade-up">
+
+      <!-- COLUMN 1 -->
+      <div class="menu-col">
+        <h4>Veg Snacks</h4>
+        <ul class="menu-list">
+          <li><span>Peanut Masala</span><span class="price">₹100</span></li>
+          <li><span>Cheese Finger</span><span class="price">₹280</span></li>
+          <li><span>Paneer Tikka</span><span class="price">₹250</span></li>
+          <li><span>Malai Paneer Tikka</span><span class="price">₹270</span></li>
+          <li><span>Kasundi Paneer Tikka</span><span class="price">₹280</span></li>
+          <li><span>Hariyali Paneer Tikka</span><span class="price">₹280</span></li>
+        </ul>
+
+        <h4>Chaap</h4>
+        <ul class="menu-list">
+          <li><span>Butter Chaap Gravy</span><span class="price">₹280</span></li>
+          <li><span>Kadhai Chaap Gravy</span><span class="price">₹280</span></li>
+          <li><span>Lemon Chaap Gravy</span><span class="price">₹300</span></li>
+          <li><span>Rarra Chaap Gravy</span><span class="price">₹300</span></li>
+          <li><span>Tandoori Chaap</span><span class="price">₹200</span></li>
+          <li><span>Malai Chaap</span><span class="price">₹220</span></li>
+        </ul>
+      </div>
+
+      <!-- COLUMN 2 -->
+      <div class="menu-col">
+        <h4>Veg Main Course</h4>
+        <ul class="menu-list">
+          <li><span>Paneer Bhurji</span><span class="price">₹250</span></li>
+          <li><span>Palak Paneer</span><span class="price">₹280</span></li>
+          <li><span>Kadhai Paneer</span><span class="price">₹250</span></li>
+          <li><span>Shahi Paneer</span><span class="price">₹250</span></li>
+          <li><span>Paneer Butter Masala</span><span class="price">₹280</span></li>
+          <li><span>Dal Makhni</span><span class="price">₹180</span></li>
+        </ul>
+
+        <h4>Rice & Breads</h4>
+        <ul class="menu-list">
+          <li><span>Jeera Rice</span><span class="price">₹80</span></li>
+          <li><span>Masala Rice</span><span class="price">₹150</span></li>
+          <li><span>Butter Naan</span><span class="price">₹35</span></li>
+          <li><span>Garlic Naan</span><span class="price">₹60</span></li>
+          <li><span>Lachha Parantha</span><span class="price">₹50</span></li>
+        </ul>
+      </div>
+
+      <!-- COLUMN 3 -->
+      <div class="menu-col">
+        <h4>Non-Veg</h4>
+        <ul class="menu-list">
+          <li><span>Chicken Soup</span><span class="price">₹60</span></li>
+          <li><span>Butter Chicken</span><span class="price">₹550</span></li>
+          <li><span>Kadhai Chicken</span><span class="price">₹550</span></li>
+          <li><span>Rara Chicken</span><span class="price">₹600</span></li>
+          <li><span>Rara Mutton</span><span class="price">₹600</span></li>
+          <li><span>Home Made Chicken</span><span class="price">₹550</span></li>
+        </ul>
+
+        <h4>Fish & Prawns</h4>
+        <ul class="menu-list">
+          <li><span>Fish Finger</span><span class="price">₹450</span></li>
+          <li><span>Fish Pakora</span><span class="price">₹300</span></li>
+          <li><span>Prawns Tikka</span><span class="price">₹750</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
 
   <!-- FOOTER -->
-  <footer class="site-footer fade-up" role="contentinfo">
-    <div class="container footer-inner" style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
-      <div>© Apna Dhaba · Authentic Punjabi Cuisine · Since 1989</div>
-      <div class="muted">Prepared with premium ingredients. Honest, pocket-friendly prices.</div>
+  <footer class="site-footer fade-up">
+    <div class="container">
+      <p>© Apna Dhaba · Since 1989</p>
+      <p class="muted">
+        Premium ingredients · Authentic taste · Honest pricing
+      </p>
     </div>
   </footer>
 
-  <!-- Local JS -->
+  <!-- JS -->
   <script src="script.js"></script>
 </body>
 </html>
